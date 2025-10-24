@@ -6,11 +6,9 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT
     default y
 
-# 左（L）をCentral（親機）に変更
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-# NFCピンをGPIOとして使用可能に
 config NFCT_PINS_AS_GPIOS
     default y
 
@@ -24,7 +22,6 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT
     default y
 
-# 右（R）をPeripheral（子機）に設定
 config ZMK_SPLIT_ROLE_PERIPHERAL
     default y
 
