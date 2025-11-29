@@ -1,8 +1,11 @@
 file_format: "1"
 id: roBa
 name: roBa
+#BoardとShieldがあるボードはマイコンそのもの、シールドはその上に乗っかるものキーボードとか乗っける場合はシールドを選択
 type: shield
 url: https://github.com/kumamuk-git/zmk-config-roBa
+#動作に何を使って欲しいかZMKStudioなどを使用するときの認識に必要
 requires: [seeeduino_xiao_ble]
+#持ってる機能の説明今回はキーボード。エンコーダーやライトが必要な時は書いとかないといけないらしいけどrobaには記載がないから必要がないのかも
 features:
   - keys
