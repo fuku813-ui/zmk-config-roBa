@@ -1,5 +1,13 @@
+#ファームフェアの製造を自動的にしてくれるようにする
+#この部分のおかげでブラウザ上でコードを編集するだけで、新しいファームウェアを手に入れることができる
+
+#push　ファイル編集して保存した時 
+#pull_request 修正依頼を出したとき（commit changesボタン？）
+#workflow_dispatch　GitHubのブラウザ画面にある「Run workflow」ボタンを手動で押した時。
 on: [push, pull_request, workflow_dispatch]
 
+#上の３つを押したときZMK公式が用意しているビルド手順から持ってきて自分のコードをビルドさせる
+#だからこの部分がコードが少なくて済む
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
