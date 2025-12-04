@@ -1,5 +1,9 @@
+#Kconfig.defconfig が動くためのスイッチを作成している場所
 config SHIELD_ROBA_R
     def_bool $(shields_list_contains,roBa_R)
+#ビルドしようとしているリストの中に roBa_R という文字が含まれていたら…
+#結果 このフラグを True (ON) にしなさいというような文章
+
 
 config SHIELD_ROBA_L
     def_bool $(shields_list_contains,roBa_L)
