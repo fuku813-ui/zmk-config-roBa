@@ -1,16 +1,20 @@
-if SHIELD_ROBA_R
+#ZMKファームウェアにおける左右それぞれのキーボード基板の「初期設定」を定義している場所です。
 
+#右手側
+if SHIELD_ROBA_R
+#ビルドした時のキーボードの名前を↓の名前に設定
 config ZMK_KEYBOARD_NAME
     default "roBa_R"
-
+#分割キーボードであることを定義
 config ZMK_SPLIT
     default y
-
+#セントラル側（親機）の定義
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
+#左手側の設定（右側とほぼ同じ）
 if SHIELD_ROBA_L
 
 config ZMK_KEYBOARD_NAME
