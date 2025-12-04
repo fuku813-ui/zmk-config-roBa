@@ -1,6 +1,6 @@
 #ZMKファームウェアにおける左右それぞれのキーボード基板の「初期設定」を定義している場所です。
 
-#右手側
+#右手側　ここのIfの部分がKconfig.shieldのconfigと対応しているので大文字小文字にそろえる
 if SHIELD_ROBA_R
 #ビルドした時のキーボードの名前を↓の名前に設定
 config ZMK_KEYBOARD_NAME
